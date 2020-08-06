@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <title>The HeadCount</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -29,77 +31,80 @@
         <header id="SITE_HEADER">
             <div class="_2SEHo"></div>
             <div class="d-flex col-12 header-container" style="justify-content: space-between;">
-                <div class="col-3">
-
-                    <svg class="logo" ref="svgcomp-k4aqo91l" key="svgcomp-k4aqo91l" id="svgcomp-k4aqo91l" version="1.1"
-                        role="img" aria-label="Headcount only.png">
-                        <defs>
-                            <filter id="mask-comp-k4aqo91l-svg-bleach">
-                                <feColorMatrix type="matrix" values="0 0 0 0 1
+                <div class="col-6 logo-container">
+                    <div class="logo">
+                        <svg ref="svgcomp-k4aqo91l" key="svgcomp-k4aqo91l" id="svgcomp-k4aqo91l" version="1.1"
+                            role="img" aria-label="Headcount only.png">
+                            <defs>
+                                <filter id="mask-comp-k4aqo91l-svg-bleach">
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1
                         0 0 0 0 1
                         0 0 0 0 1
                         0 0 0 1 0"></feColorMatrix>
-                            </filter>
-                            <mask id="mask-comp-k4aqo91l">
-                                <use filter="url(#mask-comp-k4aqo91l-svg-bleach)" id="mask-comp-k4aqo91l-svg-use"
-                                    xlink:href="#mask-comp-k4aqo91l-svg" width="100%" height="100%" x="0" y="0">
-                                </use>
-                            </mask>
-                            <svg id="mask-comp-k4aqo91l-svg" preserveAspectRatio="none" data-bbox="20 20 160 160"
-                                viewBox="20 20 160 160" height="200" width="200" xmlns="http://www.w3.org/2000/svg"
-                                data-type="shape">
-                                <g>
-                                    <path d="M180 20v160H20V20h160z"></path>
-                                </g>
-                            </svg>
-                        </defs>
-                        <image id="comp-k4aqo91limage" ref="image" key="image" data-type="image" width="100%"
-                            height="100%" mask="url(#mask-comp-k4aqo91l)" data-svg-mask="mask-comp-k4aqo91l-svg"
-                            xlink:href="https://static.wixstatic.com/media/c94805_d37de2750c0b47fcb32ee92ff9bffa2f~mv2.png/v1/crop/x_0,y_134,w_344,h_70/fill/w_201,h_41,al_c,q_85,usm_0.66_1.00_0.01/Headcount%20only.webp"
-                            style="width: 268px; height: 55px; object-fit: cover;"></image>
-                    </svg>
+                                </filter>
+                                <mask id="mask-comp-k4aqo91l">
+                                    <use filter="url(#mask-comp-k4aqo91l-svg-bleach)" id="mask-comp-k4aqo91l-svg-use"
+                                        xlink:href="#mask-comp-k4aqo91l-svg" width="100%" height="100%" x="0" y="0">
+                                    </use>
+                                </mask>
+                                <svg id="mask-comp-k4aqo91l-svg" preserveAspectRatio="none" data-bbox="20 20 160 160"
+                                    viewBox="20 20 160 160" height="200" width="200" xmlns="http://www.w3.org/2000/svg"
+                                    data-type="shape">
+                                    <g>
+                                        <path d="M180 20v160H20V20h160z"></path>
+                                    </g>
+                                </svg>
+                            </defs>
+                            <image id="comp-k4aqo91limage" ref="image" key="image" data-type="image" width="100%"
+                                height="100%" mask="url(#mask-comp-k4aqo91l)" data-svg-mask="mask-comp-k4aqo91l-svg"
+                                xlink:href="https://static.wixstatic.com/media/c94805_d37de2750c0b47fcb32ee92ff9bffa2f~mv2.png/v1/crop/x_0,y_134,w_344,h_70/fill/w_201,h_41,al_c,q_85,usm_0.66_1.00_0.01/Headcount%20only.webp"
+                                style="width: 268px; height: 55px; object-fit: cover;"></image>
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <ul class="d-flex" style="list-style: none; width: 100%;background-color:rgb(192, 210, 229);">
-                        <li class="nav-btn"
-                            style="width: 134px; height: 37px; position: relative; box-sizing: border-box; overflow: visible;">
-                            <a class="nav-link" href="#">
+                <nav class="col-6">
+                    <ul id="mainNav" class="d-flex"
+                        style="list-style: none;width: fit-content;background-color:rgb(192, 210, 229);">
+                        <li class="nav-btn nav-active"
+                            style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                            <a class="nav-link" href="#main" active>
                                 <div class="nav-text">
-                                    <p> Home</p>
+                                    <p style="text-align: center;line-height: 37px;">Home</p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-btn"
-                            style="width: 134px; height: 37px; position: relative; box-sizing: border-box; overflow: visible;">
-                            <a class="nav-link" href="#">
+                            style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                            <a class="nav-link" href="#solution-section">
                                 <div class="nav-text">
-                                    <p> Solutions</p>
+                                    <p style="text-align: center;line-height: 37px;">Solutions</p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-btn"
-                            style="width: 134px; height: 37px; position: relative; box-sizing: border-box; overflow: visible;">
-                            <a class="nav-link" href="#">
+                            style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                            <a class="nav-link" href="#about-section">
                                 <div class="nav-text">
-                                    <p> About</p>
+                                    <p style="text-align: center;line-height: 37px;"> About</p>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-btn"
-                            style="width: 134px; height: 37px; position: relative; box-sizing: border-box; overflow: visible;">
-                            <a class="nav-link" href="#">
+                            style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                            <a class="nav-link" href="#contact-section">
                                 <div class="nav-text">
-                                    <p> Contact</p>
+                                    <p style="text-align: center;line-height: 37px;"> Contact</p>
                                 </div>
                             </a>
                         </li>
 
+
                     </ul>
-                </div>
+                </nav>
             </div>
         </header>
         <div id="SITE_HEADER-placeholder"></div>
-        <main class="d-flex flex-column" style="align-items: center;">
+        <main class="d-flex flex-column" style="align-items: center;" id="main">
 
             <div class="col-12" id="comp-ihpx2cmf">
                 <h1 style="font-size:55px; line-height:1.1em; text-align:center;">
@@ -110,13 +115,14 @@
                 </h1>
             </div>
             <div id="arrow-section" class="col-12 " style="display: inline-flex;    justify-content: center; ">
-                <a>
+                <a href="#solution-section">
                     <img alt="Arrow Down"
                         src="https://static.wixstatic.com/media/c19c76_376dc1d20bd348b99c4a732a1d6d7c81.png/v1/fill/w_81,h_47,al_c,lg_1,q_85/c19c76_376dc1d20bd348b99c4a732a1d6d7c81.webp"
                         style="width: 54px; height: 31px; object-fit: cover;">
                 </a>
             </div>
-            <section class="solution-section d-flex flex-column col-12" style="align-items: center;">
+            <section id="solution-section" class="solution-section d-flex flex-column col-12"
+                style="align-items: center; padding-bottom: 60px;">
                 <div class="section-header">
                     <h2>Solutions</h2>
                     <div class="header-border">
@@ -124,7 +130,8 @@
                 </div>
 
                 <div class="card-cantainer col-12 d-flex flex-wrap" id="comp-ig96e99p">
-                    <div class="col-4 col-sm-12">
+                    <div class="col-4 col-sm-12 card-col"
+                        style="background-image: url(./static/images/pexels-yury-kim-585419.jpg);">
                         <div class="card jKS1D">
                             <div class="card-title">
                                 <p><span>
@@ -227,34 +234,32 @@
                 </div>
             </section>
             <section id="about-section" class="col-12">
-                <div class="d-flex col-12">
-                    <div class="col-7">&nbsp;</div>
-                    <div class="col-4" style="padding:10px;">
-                        <div class="about-header">
-                            <h2><span style="letter-spacing:0.05em">ABOUT THE HEADCOUNT</span></h2>
-                        </div>
-                        <div class="header-border"></div>
-                        <div class="about-text">
-                            <p style="line-height: 1.7em;">The Headcount, is a real-time hosted Software-As-A-Service
-                                (SAAS)
-                                provider for monitoring
-                                labor
-                                compliance. The Headcount platform offers an array of modules to support clients who are
-                                required by
-                                rule (and good-faith) to monitor diversity workforce participation, wage-theft,
-                                ghost-hours
-                                and
-                                an
-                                array
-                                of other industry specific objectives and executive orders. The Headcount platform is a
-                                user-friendly,
-                                intuitive system that includes a number of reports that can be downloaded as an Excel or
-                                PDF
-                                document.
-                            </p>
-                        </div>
+                <div class="col-4" style="padding:10px; padding-left:100px" id="about-container">
+                    <div class="about-header">
+                        <h2><span style="letter-spacing:0.05em">ABOUT THE HEADCOUNT</span></h2>
+                    </div>
+                    <div class="header-border"></div>
+                    <div class="about-text">
+                        <p style="line-height: 1.7em;">The Headcount, is a real-time hosted Software-As-A-Service
+                            (SAAS)
+                            provider for monitoring
+                            labor
+                            compliance. The Headcount platform offers an array of modules to support clients who are
+                            required by
+                            rule (and good-faith) to monitor diversity workforce participation, wage-theft,
+                            ghost-hours
+                            and
+                            an
+                            array
+                            of other industry specific objectives and executive orders. The Headcount platform is a
+                            user-friendly,
+                            intuitive system that includes a number of reports that can be downloaded as an Excel or
+                            PDF
+                            document.
+                        </p>
                     </div>
                 </div>
+
             </section>
             <section id="contact-section" class="d-flex flex-column col-12">
                 <div class="section-header">
@@ -288,7 +293,7 @@
                             </div>
 
                             <div style="width: 149px; height: 40px; left:281px; position: relative; margin: 4px 0 0 0;">
-                                <button><span>Submit</span></button>
+                                <button id="form-btn"><span>Submit</span></button>
                             </div>
                             <div style="margin: 0px 0px 22px 0; width: 300px;">
                                 <p style="text-align: center;"></p>
