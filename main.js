@@ -20,12 +20,11 @@ $(function () {
                 return this;
         });
         // Get the id of the current element
-
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
         cur = cur[cur.length - 1];
 
         var id = cur && cur.length ? cur[0].id : "";
-
-
+       
         if (lastId !== id) {
             lastId = id;
             // Set/remove active class
@@ -35,10 +34,17 @@ $(function () {
                 );
                 menuItems
                     .filter("[href='#" + id + "']").parent().addClass("nav-active");
+                // if (id == 'solution-section') {
+                //     $('.card').each(index => $('.card').eq(index).toggleClass('w3-animate-left'));
+                // }
             } else {
                 menuItems.filter("[href='#" + main + "']").parent().addClass("nav-active");
             }
         }
+        $('.card').each(index => {
+            if (($('.card').eq(index).offset().top) < bottom_of_screen)
+                $('.card').eq(index).addClass('w3-animate-left')
+        });
     });
 
 });
