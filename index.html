@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+
     <title>The HeadCount</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
 </head>
@@ -102,12 +106,20 @@
                     </ul>
                 </nav>
             </div>
+            <div class="d-flex col-12 mobile-header-container">
+                <div style="margin-left: 20% ;">
+                    <a><span>Request Demo</span></a>
+                </div>
+                <div style="padding-right: 20px;">
+                    <a><span><i class="fa fa-bars"></i></span></a>
+                </div>
+            </div>
         </header>
         <div id="SITE_HEADER-placeholder"></div>
         <main class="d-flex flex-column" style="align-items: center;" id="main">
 
             <div class="col-12" id="comp-ihpx2cmf">
-                <h1 style="font-size:55px; line-height:1.1em; text-align:center;">
+                <h1 style=" line-height:1.1em; text-align:center;">
                     <span style="font-weight: bold;letter-spacing:0.05em;"> Headcount,
                         the only all-in-one software
                         solution provider with a 360 degree view of your workforce 24/7.
@@ -121,8 +133,7 @@
                         style="width: 54px; height: 31px; object-fit: cover;">
                 </a>
             </div>
-            <section id="solution-section" class="solution-section d-flex flex-column col-12"
-                style="align-items: center; padding-bottom: 60px;">
+            <section id="solution-section" class="solution-section d-flex flex-column col-12" style="">
                 <div class="section-header">
                     <h2>Solutions</h2>
                     <div class="header-border">
@@ -145,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-12 card-col">
+                    <div class="col-4  card-col">
                         <div class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
@@ -157,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-12 card-col">
+                    <div class="col-4  card-col">
                         <div class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
@@ -169,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-12 card-col">
+                    <div class="col-4  card-col">
                         <div class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
@@ -244,7 +255,7 @@
                 </div>
             </section>
             <section id="about-section" class="col-12">
-                <div class="col-4" style="padding:10px; padding-left:100px" id="about-container">
+                <div class="col-4" style="" id="about-container">
                     <div class="about-header">
                         <h2><span style="letter-spacing:0.05em">ABOUT THE HEADCOUNT</span></h2>
                     </div>
@@ -276,13 +287,13 @@
                     <h2>CONTACT</h2>
                     <div class="header-border"></div>
                 </div>
-                <div style="max-width: 940px;">
+                <div style="max-width:100%;" id="gmap-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.4904982933416!2d-90.22379715701125!3d38.60374500959415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b38771fd3d5d%3A0xa48c54523c2b69b1!2sDK%20Solutions!5e0!3m2!1sen!2sin!4v1596602640543!5m2!1sen!2sin"
                         height="365" width="940" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0" style="min-width: 100%;"></iframe>
+                        aria-hidden="false" tabindex="0" style="max-width: 100%;"></iframe>
                 </div>
-                <div class="d-flex col-12" style="max-width: 940px; margin: 50px 0 60px 0;">
+                <div class="d-flex col-12" id="contact-form-container" style="max-width: 940px; margin: 50px 0 60px 0;">
 
                     <div class="col-6">
                         <form class="col-10 d-flex flex-column" id="cantact-form">
@@ -302,7 +313,7 @@
                                     required class="col-12" spellcheck="false" placeholder="Your message"></textarea>
                             </div>
 
-                            <div style="width: 149px; height: 40px; left:281px; position: relative; margin: 4px 0 0 0;">
+                            <div style="width: 149px; height: 40px;  position: relative; margin: 4px 0 0 0;">
                                 <button id="form-btn"><span>Submit</span></button>
                             </div>
                             <div style="margin: 0px 0px 22px 0; width: 300px;">
@@ -311,13 +322,13 @@
                         </form>
                     </div>
                     <div class="col-6">
-                        <div class="col-8 d-flex flex-column" style="align-items: flex-start; margin: 0 auto;">
+                        <div class="col-8 d-flex flex-column" id="address-container">
                             <div style="width: 340; margin: 0 0 18px 0;">
                                 <p class="font_5"
                                     style="line-height: 0.9em;letter-spacing: normal;font-weight: bolder;">Head Office
                                 </p>
                             </div>
-                            <div style="width: 340px;height: auto; margin:0px 0px 47px 0;">
+                            <div style="" class="address-dtls">
                                 <p class="font_7" style="line-height:1.5em">2731 S. Jefferson</p>
                                 <p class="font_7" style="line-height:1.5em">St. Louis, MO. 63118</p>
                                 <p class="font_7" style="line-height:1.5em">&nbsp;</p>
@@ -329,7 +340,7 @@
                                 <p class="font_5"
                                     style="line-height: 0.9em;letter-spacing: normal;font-weight: bolder;">Support</p>
                             </div>
-                            <div style="width: 340px;height: auto; margin:0px 0px 47px 0;">
+                            <div class="address-dtls">
                                 <p class="font_7" style="line-height:1.5em">support@TheHeadcount.net</p>
                                 <p class="font_7" style="line-height:1.5em"><span style="text-decoration:underline;"><a
                                             href="https://theheadcount.atlassian.net/servicedesk/customer/user/login"

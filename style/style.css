@@ -351,6 +351,10 @@ header {
     padding: 0;
 }
 
+.mobile-header-container {
+    display: none;
+}
+
 .header-container {
     justify-content: space-between;
     align-items: center;
@@ -481,7 +485,7 @@ section {
     left: 0;
     margin-left: 0;
     width: 100%;
-    position: fixed !important;
+    position: sticky;
     z-index: 50;
 }
 
@@ -533,8 +537,9 @@ main>* {
 }
 
 #solution-section {
-    align-items: center;
     background: rgb(255, 255, 255);
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 #about-section {
@@ -574,12 +579,15 @@ main>* {
     background-color: rgb(0, 0, 0);
 }
 
+#comp-ihpx2cmf h1 {
+    font-size: 55px;
+}
+
 #cantact-form button {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     background-color: rgb(59, 58, 58);
     transition: var(--trans1, border-color .4s ease 0s, background-color .4s ease 0s);
     min-width: 100%;
@@ -601,7 +609,7 @@ main>* {
     justify-content: center;
     min-width: 100%;
     font: var(--font_5);
-
+    font-size: large;
 }
 
 .font_7 {
@@ -633,9 +641,26 @@ main>* {
 
     transition: var(--trans1, border-color .4s ease 0s, background-color .4s ease 0s);
 
-
 }
+
+#form-btn {
+    left: 281px;
+}
+
 
 #about-container {
     background: rgb(247, 247, 247);
+    padding: 10px;
+    padding-left: 100px;
+}
+
+#address-container {
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.address-dtls {
+    width: 340px;
+    height: auto;
+    margin: 0px 0px 47px 0;
 }
