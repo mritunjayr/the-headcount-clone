@@ -1,8 +1,15 @@
 
 var lastId, topMenu, topMenuHeight, menuItems;
 var scrollItems, fromTop;
+
 $(function () {
 
+    $('#cancel-btn').click(() => {
+        $('#mobilemainNav').css("visibility", "hidden");
+    });
+    $('#mmenu').click(() => {
+        $('#mobilemainNav').css("visibility", "visible");
+    });
 
     topMenu = $("#mainNav"), topMenuHeight = topMenu.outerHeight() + 1,
         // All list items
@@ -24,7 +31,7 @@ $(function () {
         cur = cur[cur.length - 1];
 
         var id = cur && cur.length ? cur[0].id : "";
-       
+
         if (lastId !== id) {
             lastId = id;
             // Set/remove active class
@@ -50,7 +57,10 @@ $(function () {
 });
 
 
-
+function hideMobileMenu() {
+    $('#mobilemainNav').css("visibility", "hidden");
+    return true;
+}
 
 $(function () {
     $('.nav-btn').click((event) => {

@@ -41,6 +41,12 @@
         font-size: x-large;
         padding: 0 5px;
         margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .about-header+div {
+
+        margin-left: 10px;
     }
 
     .header-border {
@@ -62,6 +68,7 @@
 
     .section-header {
         margin-top: 50px;
+        margin-left: 10px;
     }
 
     .section-header h2 {
@@ -98,5 +105,52 @@
         font-size: large;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .mobile-header-container a {
+        text-decoration: none;
+    }
+
+    .mobile-header-container a:visited {
+        color: black;
+    }
+
+    #mobilemainNav {
+        visibility: hidden;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        background-color: rgba(237, 205, 31, 1);
+        position: fixed;
+    }
+
+    .mlink-container {
+        list-style: none;
+        width: 100%;
+        height: 40%;
+        padding: 0 25%;
+        align-content: center;
+        justify-content: space-around;
+        background-color: transparent !important;
+        font: var(--font_7);
+        font-size: large;
+        color: white;
+    }
+
+    .cancel {
+        font-size: xx-large;
+        text-align: right !important;
+        padding-bottom: 50px;
+        padding-right: 20px;
+
+    }
+
+    .nav-btn p {
+        width: 100%;
+        height: 100%;
+        color: white;
     }
 }

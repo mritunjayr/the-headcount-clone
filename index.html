@@ -110,13 +110,57 @@
             </div>
             <div class="d-flex col-12 mobile-header-container">
                 <div style="margin-left: 20% ;">
-                    <a><span>Request Demo</span></a>
+                    <a class="nav-link" href="#contact-section"><span>Request Demo</span></a>
                 </div>
                 <div style="padding-right: 20px;">
-                    <a><span><i class="fa fa-bars"></i></span></a>
+                    <a class="nav-link" id="mmenu"><span><i class="fa fa-bars"></i></span></a>
                 </div>
             </div>
+
         </header>
+        <nav class="" id="mobilemainNav">
+            <div class="cancel">
+                <a class="nav-link" id="cancel-btn"><span class="nav-text" style="text-align: right;"><i
+                            class="fa fa-times"></i></span></a>
+            </div>
+            <ul class="d-flex flex-column mlink-container"
+                style="list-style: none;width: 100%;background-color:rgb(192, 210, 229);">
+                <li onclick="hideMobileMenu();" class="nav-btn"
+                    style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                    <a class="nav-link" href="#main" active>
+                        <div class="nav-text">
+                            <p style="text-align: center;line-height: 37px;">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li onclick="hideMobileMenu();" class="nav-btn"
+                    style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                    <a class="nav-link" href="#solution-section">
+                        <div class="nav-text">
+                            <p style="text-align: center;line-height: 37px;">Solutions</p>
+                        </div>
+                    </a>
+                </li>
+                <li onclick="hideMobileMenu();" class="nav-btn"
+                    style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                    <a class="nav-link" href="#about-section">
+                        <div class="nav-text">
+                            <p style="text-align: center;line-height: 37px;"> About</p>
+                        </div>
+                    </a>
+                </li>
+                <li onclick="hideMobileMenu();" class="nav-btn"
+                    style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                    <a class="nav-link" href="#contact-section">
+                        <div class="nav-text">
+                            <p style="text-align: center;line-height: 37px;"> Contact</p>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
         <div id="SITE_HEADER-placeholder"></div>
         <main class="d-flex flex-column" style="align-items: center;" id="main">
 
