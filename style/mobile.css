@@ -109,14 +109,19 @@
 
     .mobile-header-container a {
         text-decoration: none;
+        color: black;
     }
 
     .mobile-header-container a:visited {
         color: black;
     }
 
+    .mobile-header-container a:active {
+        color: black;
+    }
+
     #mobilemainNav {
-        visibility: hidden;
+        display: none;
         width: 100%;
         top: 0;
         bottom: 0;

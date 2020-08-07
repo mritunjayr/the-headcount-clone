@@ -5,10 +5,10 @@ var scrollItems, fromTop;
 $(function () {
 
     $('#cancel-btn').click(() => {
-        $('#mobilemainNav').css("visibility", "hidden");
+        $('#mobilemainNav').css("display", "none");
     });
     $('#mmenu').click(() => {
-        $('#mobilemainNav').css("visibility", "visible");
+        $('#mobilemainNav').css("display", "block");
     });
 
     topMenu = $("#mainNav"), topMenuHeight = topMenu.outerHeight() + 1,
@@ -58,7 +58,7 @@ $(function () {
 
 
 function hideMobileMenu() {
-    $('#mobilemainNav').css("visibility", "hidden");
+    $('#mobilemainNav').css("display", "none");
     return true;
 }
 
