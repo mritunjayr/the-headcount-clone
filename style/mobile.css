@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #comp-ihpx2cmf {
+        width: 100%;
+    }
+
+    #cantact-form {
+        width: 100%;
+    }
+
+    #comp-ig96e99p,
+    #contact-form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gmap-container {
+        display: flex;
+    }
+
+    .header-container {
+        display: none;
+    }
+
+    #footer {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #about-container {
+        padding: 10px 0;
+        margin-top: 64vh;
+    }
+
+    .about-header {
+        font-size: x-large;
+        padding: 0 5px;
+        margin-bottom: 0;
+    }
+
+    .header-border {
+        margin-bottom: 1.5rem;
+        display: revert;
+    }
+
+    #contact-section {
+        align-items: flex-start;
+    }
+
+    .about-text {
+        padding: 0 10px;
+    }
+
+    #solution-section {
+        align-items: flex-start;
+    }
+
+    .section-header {
+        margin-top: 50px;
+    }
+
+    .section-header h2 {
+        font-size: xx-large;
+    }
+
+    #form-btn {
+        left: 181px;
+    }
+
+    #comp-ihpx2cmf {
+
+        margin-top: 23vh;
+    }
+
+    #comp-ihpx2cmf h1 {
+        font-size: xx-large;
+    }
+
+    #address-container {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .address-dtls {
+        text-align: center;
+    }
+
+    .mobile-header-container {
+        display: flex;
+        background-color: rgba(237, 205, 31, 0.85);
+        height: 60px;
+        width: 100%;
+        font-size: large;
+        align-items: center;
+        justify-content: space-between
+    }
+}
