@@ -24,12 +24,8 @@ function check_if_in_view() {
         }
     });
 }
-topMenu = $("#mainNav"), topMenuHeight = topMenu.outerHeight() + 1
-menuItems = topMenu.find("a");
-scrollItems = menuItems.map(function () {
-    var item = $($(this).attr("href"));
-    if (item.length) { return item; }
-});
+
+
 $(function () {
     $animation_elements = $('.card');
 
@@ -42,7 +38,12 @@ $(function () {
 
 
     // All list items
-
+    topMenu = $("#mainNav"), topMenuHeight = topMenu.outerHeight() + 1
+    menuItems = topMenu.find("a");
+    scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
 
 
     $(window).scroll(function () {
@@ -67,17 +68,12 @@ $(function () {
                 );
                 menuItems
                     .filter("[href='#" + id + "']").parent().addClass("nav-active");
-                // if (id == 'solution-section') {
-                //     $('.card').each(index => $('.card').eq(index).toggleClass('w3-animate-left'));
-                // }
+
             } else {
                 menuItems.filter("[href='#" + main + "']").parent().addClass("nav-active");
             }
         }
-        // if (cardAnimated == false && ($('.card').eq(0).offset().top < bottom_of_screen)) {
-        //     cardAnimated = true;
-        //     cardAnimation();
-        // }
+
     });
     $('#contact-form').submit((event) => {
         event.preventDefault();
