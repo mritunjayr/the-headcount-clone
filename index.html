@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192"
+        href="https://static.wixstatic.com/media/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png">
+    <link rel="shortcut icon"
+        href="https://static.wixstatic.com/media/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png"
+        type="image/png">
+    <link rel="apple-touch-icon"
+        href="https://static.wixstatic.com/media/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c94805_24efcd8e20694cc28e409397851e6b4d%7Emv2.png"
+        type="image/png">
 
     <title>The HeadCount</title>
 
@@ -13,6 +21,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script> -->
     <script src="./main.js"></script>
 </head>
 
@@ -33,7 +43,7 @@
         <header id="SITE_HEADER">
             <div class="_2SEHo"></div>
             <div class="d-flex col-12 header-container" style="justify-content: space-between;">
-                <div class="col-6 logo-container">
+                <div class="col-5 logo-container">
                     <div class="logo">
                         <svg ref="svgcomp-k4aqo91l" key="svgcomp-k4aqo91l" id="svgcomp-k4aqo91l" version="1.1"
                             role="img" aria-label="Headcount only.png">
@@ -64,9 +74,9 @@
                         </svg>
                     </div>
                 </div>
-                <nav class="col-5">
-                    <ul id="mainNav" class="d-flex"
-                        style="list-style: none;width: fit-content;background-color:rgb(192, 210, 229);">
+                <nav class="col-7 d-flex" style="justify-content: space-around;">
+                    <ul id="mainNav" class="d-flex col-9"
+                        style="max-width: fit-content;list-style: none;background-color:rgb(192, 210, 229);">
                         <li class="nav-btn nav-active"
                             style="width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
                             <a class="nav-link" href="#main" active>
@@ -102,14 +112,26 @@
 
 
                     </ul>
+
+                    <div class="nav-btn"
+                        style="background-color: rgba(237, 205, 31, 1);width: 134px; height: 37px;font-size: 20px; position: relative; box-sizing: border-box; overflow: visible;">
+                        <a class="nav-link" href="#contact-form">
+                            <div class="nav-text">
+                                <p style="text-align: center;line-height: 37px;"> Request Demo</p>
+                            </div>
+                        </a>
+                    </div>
+
                 </nav>
+
             </div>
             <div class="d-flex col-12 mobile-header-container">
                 <div style="width: 100% ;text-align: center;">
-                    <a class="nav-link" href="#contact-section"><span>Request Demo</span></a>
+                    <a class="nav-link" href="#contact-form"><span>Request Demo</span></a>
                 </div>
                 <div style="padding-right: 20px;">
-                    <a class="nav-link" id="mmenu"><span><i class="fa fa-bars"></i></span></a>
+                    <a class="nav-link" id="mmenu"><span style="font-size: xx-large;"><i
+                                class="fa fa-bars"></i></span></a>
                 </div>
             </div>
 
@@ -184,7 +206,7 @@
 
                 <div class="card-cantainer col-12 d-flex flex-wrap" id="comp-ig96e99p">
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-1" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div style="width: 100%;height: 100%;">
                                 <div class="card-title">
@@ -199,11 +221,23 @@
                         </div>
                     </div>
                     <div class="col-4  card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-2" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
                                 <p>Workforce</p>
-                                <p>Screening</p>
+                                <p>Management</p>
+                            </div>
+                            <div class="card-body">
+                                <p>Monitor your workforce in real-time. Complete transparency on who is on-site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4  card-col">
+                        <div id="card-img-3" class="card-back-img"></div>
+                        <div class="card jKS1D">
+                            <div class="card-title">
+                                <p>Workforce</p>
+                                <p>Access Control</p>
                             </div>
                             <div class="card-body">
                                 <p>Perform complete background checks and drug screening on your workforce.</p>
@@ -211,86 +245,78 @@
                         </div>
                     </div>
                     <div class="col-4  card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-4" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Hauling</p>
+                                <p>Management</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4  card-col">
-                        <div class="card-back-img"></div>
-                        <div class="card jKS1D">
-                            <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
-                            </div>
-                            <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Monitor your haulers coming on-to the jobsite.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-5" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Contractor</p>
+                                <p>Scheduling</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Schedule your contractors to be on-site when they need avoiding any possible risks.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-6" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Real-Time</p>
+                                <p>Notifications</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Get real-time alerts and notifications of possible risks and head-counts during
+                                    muster situations.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-7" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Certified</p>
+                                <p>Payroll</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Monitor your workforce in real-time to help you stay in compliance
+                                    according to Government Agencies Ordinances/Executive Orders.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-8" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
                                 <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Surveys</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Quickly conduct site surveys and interview questions on-site.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 col-sm-12 card-col">
-                        <div class="card-back-img"></div>
+                        <div id="card-img-9" class="card-back-img"></div>
                         <div class="card jKS1D">
                             <div class="card-title">
-                                <p>workforce</p>
-                                <p>Screening</p>
+                                <p>Data</p>
+                                <p>Analytics</p>
                             </div>
                             <div class="card-body">
-                                <p>Perform complete background checks and drug screening on your workforce.</p>
+                                <p>Get real-time data of your job-site allowing you to make more proactive decisions.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -331,14 +357,14 @@
                 </div>
                 <div style="max-width:100%;" id="gmap-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.4904982933416!2d-90.22379715701125!3d38.60374500959415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b38771fd3d5d%3A0xa48c54523c2b69b1!2sDK%20Solutions!5e0!3m2!1sen!2sin!4v1596602640543!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.9768665691045!2d-90.2259506853488!3d38.60340267961714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b38770e52895%3A0xa7861ad32d25e4bb!2s2731%20S%20Jefferson%20Ave%2C%20St.%20Louis%2C%20MO%2063118%2C%20USA!5e0!3m2!1sen!2sin!4v1596900912904!5m2!1sen!2sin"
                         height="365" width="940" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0" style="max-width: 100%;"></iframe>
                 </div>
                 <div class="d-flex col-12" id="contact-form-container" style="max-width: 940px; margin: 50px 0 60px 0;">
 
                     <div class="col-6">
-                        <form class="col-10 d-flex flex-column" id="cantact-form">
+                        <form class="col-10 d-flex flex-column" id="contact-form">
                             <div style="height: 45px; margin: 8px 8px 4px 8px;">
                                 <input type="text"
                                     style="min-height: 45px; box-sizing: border-box!important;font: var(--font_8); padding: 3px 3px 3px 12px;"
@@ -355,11 +381,12 @@
                                     required class="col-12" spellcheck="false" placeholder="Your message"></textarea>
                             </div>
 
-                            <div style="width: 149px; height: 40px;  position: relative; margin: 4px 0 0 0;">
+                            <div style="width: 149px; height: 40px;  position: relative; margin: 4px 0 8px 0;">
                                 <button id="form-btn"><span>Submit</span></button>
                             </div>
-                            <div style="margin: 0px 0px 22px 0; width: 300px;">
-                                <p style="text-align: center;"></p>
+                            <div style="margin: 0px 8px 22px 0; " id="contact-form-message">
+                                <p class="font_8" style="text-align: right;"><span style="color:#8FCA8F">Thanks for
+                                        submitting!</span></p>
                             </div>
                         </form>
                     </div>
@@ -397,9 +424,10 @@
         <footer>
             <div id="footer" class="d-flex">
                 <p>&copy; 2019 The Headcount Corporation</p>
+
                 <img alt="Head Count new logo copy.png"
-                    src="https://static.wixstatic.com/media/c94805_b4b0205a58d84f5e92662529e79d88ff~mv2.png/v1/fill/w_90,h_74,al_c,q_85,usm_0.66_1.00_0.01/Head%20Count%20new%20logo%20copy.webp"
-                    style="width: 120px; height: 99px; object-fit: cover;">
+                    src="https://static.wixstatic.com/media/c94805_b4b0205a58d84f5e92662529e79d88ff~mv2.png/v1/fill/w_180,h_149,al_c,q_85,usm_0.66_1.00_0.01/Head%20Count%20new%20logo%20copy.webp"
+                    style="width: 120px; height: 99px; object-fit: cover;filter: none;    box-shadow: 0 0 0 #000;">
             </div>
         </footer>
     </div>

@@ -149,7 +149,7 @@ body {
 
 section {
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
 }
 
 .d-flex {
@@ -280,7 +280,7 @@ section {
 
 
 .card-back-img {
-    background-image: url(../static/images/pexels-yury-kim-585419.jpg);
+    /* background-image: url(../static/images/pexels-yury-kim-585419.jpg); */
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -289,7 +289,43 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 1;
+}
+
+#card-img-1 {
+    background-image: url(../static/images/1.jpg);
+}
+
+#card-img-2 {
+    background-image: url(../static/images/2.jpg);
+}
+
+#card-img-3 {
+    background-image: url(../static/images/3.jpg);
+}
+
+#card-img-4 {
+    background-image: url(../static/images/4.jpg);
+}
+
+#card-img-5 {
+    background-image: url(../static/images/5.jpg);
+}
+
+#card-img-6 {
+    background-image: url(../static/images/6.jpg);
+}
+
+#card-img-7 {
+    background-image: url(../static/images/7.jpg);
+}
+
+#card-img-8 {
+    background-image: url(../static/images/8.jpg);
+}
+
+#card-img-9 {
+    background-image: url(../static/images/9.jpg);
 }
 
 .card-cantainer {
@@ -382,6 +418,15 @@ header {
     overflow-x: hidden;
 }
 
+/* .background-video::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1px;
+} */
+
 .background-video {
     position: fixed;
     top: 0;
@@ -430,7 +475,7 @@ header {
 
 .nav-text {
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
     padding: 0 5px;
     width: 100%;
     height: 100%;
@@ -523,11 +568,12 @@ footer {
 
 #footer {
     width: 100%;
-    min-height: 150px;
+    min-height: 199px;
     max-width: 980px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 #arrow-section {
@@ -547,11 +593,12 @@ main>* {
 
 #about-section {
 
-    background-image: url(https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_980,h_648,al_c,q_85,usm_0.33_1.00_0.00/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp);
+    /* background-image: url(https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_980,h_648,al_c,q_85,usm_0.33_1.00_0.00/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp); */
+    background-image: url(https://static.wixstatic.com/media/c19c76_427a7bbf62474f74968cb087499c7a3e.jpg/v1/fill/w_2250,h_626,al_c,q_85/c19c76_427a7bbf62474f74968cb087499c7a3e.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
 }
 
 .about-header {
@@ -576,7 +623,7 @@ main>* {
 
 }
 
-#cantact-form {
+#contact-form {
     width: 440px;
     background-color: rgb(0, 0, 0);
 }
@@ -585,7 +632,7 @@ main>* {
     font-size: 55px;
 }
 
-#cantact-form button {
+#contact-form button {
     position: absolute;
     top: 0;
     right: 0;
@@ -599,7 +646,7 @@ main>* {
     color: rgba(var(--txt, var(--color_15)), var(--alpha-txt, 1));
 }
 
-#cantact-form button span {
+#contact-form button span {
     width: 100%;
     text-align: initial;
     display: flex;
@@ -629,13 +676,13 @@ main>* {
 }
 
 
-#cantact-form button span:before {
+#contact-form button span:before {
     content: "";
     flex-grow: 1;
     align-self: stretch;
 }
 
-#cantact-form button span:after {
+#contact-form button span:after {
     content: "";
     flex-grow: 1;
     align-self: stretch;
@@ -653,11 +700,15 @@ main>* {
     left: 281px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 #about-container {
     background: rgb(247, 247, 247);
     padding: 10px;
     padding-left: 100px;
+    padding-right: 4%;
 }
 
 #address-container {
@@ -669,4 +720,8 @@ main>* {
     width: 340px;
     height: auto;
     margin: 0px 0px 47px 0;
+}
+
+#contact-form-message {
+    visibility: hidden;
 }
